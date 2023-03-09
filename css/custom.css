@@ -6,7 +6,7 @@
     background: transparent !important;
 }
 
-/* ����ģʽ����͸�� */
+/* 白天模式遮罩透明 */
 #footer::before {
     background: transparent !important;
 }
@@ -15,7 +15,7 @@
     background: transparent !important;
 }
 
-/* ҹ��ģʽ����͸�� */
+/* 夜间模式遮罩透明 */
 [data-theme="dark"] #footer::before {
     background: transparent !important;
 }
@@ -24,41 +24,41 @@
     background: transparent !important;
 }
 
-/* С��������������ҹģʽ���� */
-/* һ��״̬ */
+/* 小冰分类分类磁铁黑夜模式适配 */
+/* 一般状态 */
 [data-theme="dark"] .magnet_link_context {
     background: #1e1e1e;
     color: antiquewhite;
 }
-    /* �������״̬ */
+    /* 鼠标悬浮状态 */
 [data-theme="dark"] .magnet_link_context:hover {
     background: #3ecdf1;
     color: #f2f2f2;
 }
 
 @font-face {
-    /* Ϊ���������ȡ����(����) */
+    /* 为载入的字体取名字(随意) */
     font-family: 'YSB';
-    /* �����ļ���ַ(��Ի��߾���·��������) */
+    /* 字体文件地址(相对或者绝对路径都可以) */
     src: url('/font/ysb.ttf');
-    /* ����Ӵ���ʽ(�Ӵֶ���) */
+    /* 定义加粗样式(加粗多少) */
     font-weight: normal;
-    /* ����������ʽ(б��/��б��) */
+    /* 定义字体样式(斜体/非斜体) */
     font-style: normal;
-    /* ������ʾ��ʽ */
+    /* 定义显示样式 */
     font-display: block;
 }
 
 @font-face {
-    /* Ϊ���������ȡ����(����) */
+    /* 为载入的字体取名字(随意) */
     font-family: 'YSX';
-    /* �����ļ���ַ(��Ի��߾���·��������) */
+    /* 字体文件地址(相对或者绝对路径都可以) */
     src: url('/font/ysx.otf');
-    /* ����Ӵ���ʽ(�Ӵֶ���) */
+    /* 定义加粗样式(加粗多少) */
     font-weight: normal;
-    /* ����������ʽ(б��/��б��) */
+    /* 定义字体样式(斜体/非斜体) */
     font-style: normal;
-    /* ������ʾ��ʽ */
+    /* 定义显示样式 */
     font-display: block;
 }
 
@@ -66,36 +66,36 @@
     display: none;
 }
 
-/* ��ҳ��ť���� */
+/* 翻页按钮居中 */
 #pagination {
     width: 100%;
     margin: auto;
 }
 
-/* һ���˵����� */
+/* 一级菜单居中 */
 #nav .menus_items {
     position: absolute !important;
     width: fit-content !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
 }
-    /* �Ӳ˵�����չʾ */
+    /* 子菜单横向展示 */
     #nav .menus_items .menus_item:hover .menus_item_child {
         display: flex !important;
     }
-/* �����2�Ǵ����������ĵ�2��Ԫ�أ������Ӳ˵���Ԫ�أ����԰��Լ������޸� */
+/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
 .menus_items .menus_item:nth-child(5) .menus_item_child {
     left: -40px;
 }
 
-/* �ռ�ģʽ����Ч */
+/* 日间模式不生效 */
 [data-theme="light"] #site-name,
 [data-theme="light"] #site-title,
 [data-theme="light"] #site-subtitle,
 [data-theme="light"] #post-info {
   animation: none;
 }
-/* ҹ��ģʽ��Ч */
+/* 夜间模式生效 */
 [data-theme="dark"] #site-name,
 [data-theme="dark"] #site-title {
   animation: light_15px 10s linear infinite;
@@ -106,7 +106,7 @@
 [data-theme="dark"] #post-info {
   animation: light_5px 10s linear infinite;
 }
-/* �ؼ�֡���� */
+/* 关键帧描述 */
 @keyframes light_15px {
   0% {
     text-shadow: #5636ed 0 0 15px;
@@ -206,7 +206,7 @@
   }
 }
 
-/* �����������Ϣ��Ƭ��̬����ɫ */
+/* 侧边栏个人信息卡片动态渐变色 */
 #aside-content > .card-widget.card-info {
     background: linear-gradient( -45deg, #B9F3FC, #AEE2FF, #93C6E7, #FEDEFF, #eec1ea );
     box-shadow: 0 0 5px rgb(66, 68, 68);
@@ -259,23 +259,23 @@
     }
 }
 
-/* ��ҹģʽ���� */
+/* 黑夜模式适配 */
 [data-theme="dark"] #aside-content > .card-widget.card-info {
     background: #191919ee;
 }
 
-/* ������ϢFollow me��ť */
+/* 个人信息Follow me按钮 */
 #aside-content > .card-widget.card-info > #card-info-btn {
     background-color: #FFAACF;
     border-radius: 8px;
 }
 
-/* �����ʽ */
+/* 鼠标样式 */
 #cursor {
     position: fixed;
     width: 16px;
     height: 16px;
-    /* ����ı����ĵ�ɫ */
+    /* 这里改变跟随的底色 */
     background: #FCFFE7;
     border-radius: 8px;
     opacity: 0.25;
@@ -314,7 +314,7 @@
     --backdrop-filter: blur(5px) saturate(150%);
 }
 
-/* ��ҳ���¿�Ƭ */
+/* 首页文章卡片 */
 #recent-posts > .recent-post-item {
     background: var(--trans-light);
     backdrop-filter: var(--backdrop-filter);
@@ -322,7 +322,7 @@
     border: var(--border-style);
 }
 
-/* ��ҳ������Ƭ */
+/* 首页侧栏卡片 */
 #aside-content .card-widget {
     background: var(--trans-light);
     backdrop-filter: var(--backdrop-filter);
@@ -330,7 +330,7 @@
     border: var(--border-style);
 }
 
-/* ����ҳ���鵵ҳ����ͨҳ�� */
+/* 文章页、归档页、普通页面 */
 div#post,
 div#page,
 div#archive {
@@ -340,7 +340,7 @@ div#archive {
     border-radius: 20px;
 }
 
-/* ������ */
+/* 导航栏 */
 #page-header.nav-fixed #nav {
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: var(--backdrop-filter);
@@ -350,7 +350,7 @@ div#archive {
     background: rgba(0, 0, 0, 0.7) !important;
 }
 
-/* ҹ��ģʽ���� */
+/* 夜间模式遮罩 */
 [data-theme="dark"] #recent-posts > .recent-post-item,
 [data-theme="dark"] #aside-content .card-widget,
 [data-theme="dark"] div#post,
@@ -360,7 +360,7 @@ div#archive {
 }
 
 
-/* ҹ��ģʽҳ��ҳͷ����͸�� */
+/* 夜间模式页脚页头遮罩透明 */
 [data-theme="dark"] #footer::before {
     background: transparent !important;
 }
@@ -369,7 +369,7 @@ div#archive {
     background: transparent !important;
 }
 
-/* �Ķ�ģʽ */
+/* 阅读模式 */
 .read-mode #aside-content .card-widget {
     background: rgba(158, 204, 171, 0.5) !important;
 }
@@ -378,7 +378,7 @@ div#archive {
     background: rgba(158, 204, 171, 0.5) !important;
 }
 
-/* ҹ��ģʽ�µ��Ķ�ģʽ */
+/* 夜间模式下的阅读模式 */
 [data-theme="dark"] .read-mode #aside-content .card-widget {
     background: rgba(25, 25, 25, 0.9) !important;
     color: #ffffff;
@@ -388,7 +388,7 @@ div#archive {
     background: rgba(25, 25, 25, 0.9) !important;
     color: #ffffff;
 }
-/*ͼ��*/
+/*图标*/
 svg.menu_icon {
     width: 1.28em;
     height: 1.28em;
@@ -404,7 +404,7 @@ svg.social_icon {
     fill: currentColor;
     overflow: hidden;
 }
-/*����������*/
+/*顶部加载条*/
 .pace {
     -webkit-pointer-events: none;
     pointer-events: none;
@@ -461,7 +461,7 @@ svg.social_icon {
     top: -8px
 }
 
-/*����������Ƶ����*/
+/*哔哩哔哩视频适配*/
 .aspect-ratio {
   position: relative;
   width: 90%;
